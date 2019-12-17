@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GLA",
+    "\\GLA\\Handlers",
+    "\\GLA\\Handlers\\UI",
+    "\\GLA\\Interfaces",
+    "\\GLA\\Models",
+    "\\GLA\\Models\\Person"
+  ],
+  "SelectedNode": "\\GLA\\Handlers\\UI\\NewPlayersHandler.cs",
+  "PreviewInSolutionExplorer": false
+}
