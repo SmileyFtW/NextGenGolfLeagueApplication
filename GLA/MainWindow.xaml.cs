@@ -17,12 +17,12 @@ using System.Windows.Shapes;
 
 namespace GLA
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    //The application will use a WPF interface when deployed
+
+    /*
     public partial class MainWindow : Window
     {
-        IMainUIHandler UIHandlerMain;
+        IMainUIHandler MainUIHandler;
         public MainWindow()
         {
             InitializeComponent();
@@ -33,13 +33,21 @@ namespace GLA
             IMainUIHandler UIHandlerMain = new MainUIHandler();
         }
     }
+    */
 
+    // For now going to use a console interface to get started
     public class Program
     {
         public void Main(string[] args)
         {
             IMainUIHandler UIHandlerMain = new MainUIHandler();
-            UIHandlerMain.HandlerNewPlayer.AddNewPlayer("2020", "_", 1, 3);
+            UIHandlerMain.PlayerMgtHandler.AddNewPlayer("2020", "_", 1, 3);
+            foreach(IPlayer player in UIHandlerMain.PlayerMgtHandler.NewPlayers)
+            {
+                Console.WriteLine(player.ID.ToString());
+                Console.WriteLine(player.PersonalInfo.NameOfPerson.FullName());
+            }
+                
         }
     }
 }

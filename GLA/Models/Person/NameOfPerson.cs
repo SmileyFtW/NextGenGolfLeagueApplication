@@ -9,11 +9,6 @@ namespace GLA.Models
 {
     class NameOfPerson : INameOfPerson
     {
-        string _first;
-        string _middle;
-        string _last;
-        string _suffix;
-
         public string First { get; set; }
         public string Middle { get; set; }
         public string Last { get; set; }
@@ -21,28 +16,28 @@ namespace GLA.Models
 
         string FullNameLastFirst()
         {
-            string result = _last + ", " + _first;
-            if (_middle != "")
+            string result = Last + ", " + First;
+            if (Middle != "")
             {
-                result = result + " " + _middle;
+                result = result + " " + Middle;
             }
-            if (_suffix != "")
+            if (Suffix != "")
             {
-                result = result + ", " + _suffix;
+                result = result + ", " + Suffix;
             }
             return result;
         }
         public string FullName()
         {
-            string result = _first;
-            if (_middle != "")
+            string result = First;
+            if (Middle != "")
             {
-                result = result + " " + _middle;
+                result = result + " " + Middle;
             }
-            result = result + " " + _last;
-            if (_suffix != "")
+            result = result + " " + Last;
+            if (Suffix != "")
             {
-                result = result + ", " + _suffix;
+                result = result + ", " + Suffix;
             }
             return result;
         }
@@ -57,12 +52,14 @@ namespace GLA.Models
                 return FullName();
             }
         }
+
+        //Default values for Name
         public NameOfPerson ()
         {
-            _first = "First Name";
-            _middle = "Middle Intitial or Name";
-            _last = "Last Name";
-            _suffix = "Jr., Sr., etc.";
+            First = "First Name";
+            Middle = "Middle Intitial or Name";
+            Last = "Last Name";
+            Suffix = "Jr., Sr., etc.";
         }
 
          /* This is a potential overload

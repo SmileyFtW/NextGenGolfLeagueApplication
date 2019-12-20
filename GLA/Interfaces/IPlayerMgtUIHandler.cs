@@ -8,7 +8,7 @@ namespace GLA.Interfaces
 {
     interface IPlayerMgtUIHandler
     {
-        Dictionary<string,IPlayer> NewPlayers { get; } //TODO this should be a HashSet not a Dictionary
+        List<IPlayer> NewPlayers { get; } //TODO this should be a HashSet not a Dictionary
         void AddNewPlayer(string idPrefix, string idSeparator, int idSeqNumber,int idNumDigits);
     }
 }

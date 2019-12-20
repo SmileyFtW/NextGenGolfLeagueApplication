@@ -9,12 +9,6 @@ namespace GLA.Models
 {
     class Phone : IPhone
     {
-        bool _isMobile;
-        string _code;
-        string _prefix;
-        string _number;
-        bool _isPrimary;
-
         public bool IsMobile { get; set; }
         public string Code { get; set; }
         public string Prefix { get; set; }

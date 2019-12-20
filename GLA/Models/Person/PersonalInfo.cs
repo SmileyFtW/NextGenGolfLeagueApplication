@@ -9,38 +9,18 @@ namespace GLA.Models
 {
     class PersonalInfo : IPersonalInfo
     {
-        List<IPhone> _phones;
-        List<IEmail> _emails;
-        INameOfPerson _nameOfPerson;
+        public INameOfPerson NameOfPerson{get;}
+        //TODO change each List<> to a HashSet<>
+        public List<IEmail> Emails{get;}
 
-        INameOfPerson IPersonalInfo.NameOfPerson
-        {
-            get
-            {
-                return _nameOfPerson;
-            }
-        }
-
-        List<IEmail> IPersonalInfo.Emails
-        {
-            get
-            {
-                return _emails;
-            }
-        }
-
-        List<IPhone> IPersonalInfo.Phones
-        {
-            get
-            {
-                return _phones;
-            }
-        }
+        public List<IPhone> Phones{get;}
 
    
         public PersonalInfo ()
         {
-            INameOfPerson _nameOfPerson = new NameOfPerson();
+            NameOfPerson = new NameOfPerson();
+            Phones = new List<IPhone>();
+            Emails = new List<IEmail>();
         }
         /* These are potential overloads
          * Depending on how the Contructors may be called these may be usable in the future

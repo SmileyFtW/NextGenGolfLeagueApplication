@@ -10,10 +10,10 @@ namespace GLA.Handlers.UI
 {
     class MainUIHandler : IMainUIHandler
     {
-        public IPlayerMgtUIHandler HandlerNewPlayer { get; }
+        public IPlayerMgtUIHandler PlayerMgtHandler { get; }
         public MainUIHandler()
         {
-            HandlerNewPlayer = new PlayerMgtUIHandler();
+            PlayerMgtHandler = new PlayerMgtUIHandler();
         }
     }
 }

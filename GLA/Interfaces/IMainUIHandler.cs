@@ -8,6 +8,6 @@ namespace GLA.Interfaces
 {
     interface IMainUIHandler
     {
-        IPlayerMgtUIHandler HandlerNewPlayer { get; }
+        IPlayerMgtUIHandler PlayerMgtHandler { get; }
     }
 }
