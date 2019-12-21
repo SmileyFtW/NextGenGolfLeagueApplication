@@ -50,8 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>GLA_1_.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

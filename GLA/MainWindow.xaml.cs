@@ -46,6 +46,7 @@ namespace GLA
             {
                 Console.WriteLine(player.ID.ToString());
                 Console.WriteLine(player.PersonalInfo.NameOfPerson.FullName());
+                Console.ReadLine();
             }
                 
         }
