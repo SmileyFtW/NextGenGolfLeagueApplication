@@ -12,7 +12,7 @@ namespace GLA.Models
         //IIDItem id;
         //IPersonalInfo personalInfo;
 
-        public IIDItem ID { get; protected set; }
+        public IIDItem IDItem { get; protected set; }
         public IPersonalInfo PersonalInfo { get; protected set; }
 
         //TODO add remaining properties
@@ -28,7 +28,7 @@ namespace GLA.Models
          */
         public Player(string idPrefix,string idSeparator, int idSeqNumber,int idNumDigits)
         {
-            ID = new IDItem(idPrefix, idSeparator, idSeqNumber, idNumDigits);
+            IDItem = new IDItem(idPrefix, idSeparator, idSeqNumber, idNumDigits);
             PersonalInfo = new PersonalInfo();
         }
     }

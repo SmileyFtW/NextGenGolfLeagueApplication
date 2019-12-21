@@ -11,3 +11,4 @@ C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.csproj.CoreCompileInputs.cache
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.exe
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.pdb
+C:\Users\David Miley\Source\Repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.csprojAssemblyReference.cache

@@ -8,7 +8,7 @@ namespace GLA.Interfaces
 {
     interface IPlayer
     {
-        IIDItem ID { get; } 
+        IIDItem IDItem { get; } 
         IPersonalInfo PersonalInfo { get; }
     }
 }

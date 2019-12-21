@@ -56,9 +56,9 @@ namespace GLA.Models
         //Default values for Name
         public NameOfPerson ()
         {
-            First = "First Name";
-            Middle = "Middle Intitial or Name";
-            Last = "Last Name";
+            First = "FirstName";
+            Middle = "MiddleIntitialOrName";
+            Last = "LastName";
             Suffix = "Jr., Sr., etc.";
         }
 
