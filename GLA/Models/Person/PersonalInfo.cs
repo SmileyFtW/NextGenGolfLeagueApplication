@@ -9,13 +9,12 @@ namespace GLA.Models
 {
     class PersonalInfo : IPersonalInfo
     {
-        public INameOfPerson NameOfPerson{get;}
+        public INameOfPerson NameOfPerson{ get; protected set; }
+        
         //TODO change each List<> to a HashSet<>
-        public List<IEmail> Emails{get;}
+        public List<IEmail> Emails{ get; protected set; }
+        public List<IPhone> Phones{ get; protected set; }
 
-        public List<IPhone> Phones{get;}
-
-   
         public PersonalInfo ()
         {
             NameOfPerson = new NameOfPerson();

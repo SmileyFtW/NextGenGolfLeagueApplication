@@ -1,7 +1,6 @@
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\MainWindow.g.cs
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\App.g.cs
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA_MarkupCompile.cache
-C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA_MarkupCompile.lref
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\bin\Debug\GLA.exe.config
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\bin\Debug\GLA.exe
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\bin\Debug\GLA.pdb
@@ -12,4 +11,3 @@ C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.csproj.CoreCompileInputs.cache
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.exe
 C:\Users\David Miley\source\repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.pdb
-C:\Users\David Miley\Source\Repos\SmileyFtW\NextGenGolfLeagueApplication\GLA\obj\Debug\GLA.csprojAssemblyReference.cache

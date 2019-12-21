@@ -8,6 +8,6 @@ namespace GLA.Interfaces
 {
     interface IIDItem
     {
-        string ID();
+        string ID { get; }
     }
 }

@@ -10,7 +10,9 @@ namespace GLA.UI.Handlers
 {
     class PlayerMgtUIHandler  : IPlayerMgtUIHandler 
     {
-        public List<IPlayer> NewPlayers { get; } //TODO change Dictionary to HashSet
+        public List<IPlayer> NewPlayers { get; protected set; } //TODO change List to HashSet
+
+
 
         public void AddNewPlayer(string idPrefix, string idSeparator, int idSeqNumber,int idNumDigits)
         {
@@ -20,7 +22,7 @@ namespace GLA.UI.Handlers
          
         public PlayerMgtUIHandler()
         {
-            List<IPlayer> newPlayers = new List<IPlayer>();
+            NewPlayers = new List<IPlayer>();
         }
 
     }

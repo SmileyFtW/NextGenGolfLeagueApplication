@@ -14,10 +14,15 @@ namespace GLA.Models
         int _seqnumber;
         int _seqnumberNumDigits;
 
-        public string ID()
+        public string ID
         {
-            return _prefix + _separator + _seqnumber.ToString().PadLeft(_seqnumberNumDigits,'0');
+            get
+            {
+                return _prefix + _separator + _seqnumber.ToString().PadLeft(_seqnumberNumDigits, '0');
+            }
         }
+ 
+
         public IDItem (string Prefix, string Separator, int SeqNumber, int NumberOfDigits)
         {
             _prefix = Prefix;
