@@ -30,7 +30,7 @@ namespace GLA
         private void btnLoadListWithNewPlayers_Click(object sender,RoutedEventArgs e)
         {
             MainUIHandler = new MainUIHandler();
-            for(int i=1;i=10;i++)
+            for(int i=1;i<=10;i++)
             {
                 MainUIHandler.PlayerMgtHandler.AddNewPlayer("2020", "_", i, 3);
             }
