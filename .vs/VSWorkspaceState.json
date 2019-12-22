@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GLA"
+    "\\GLA",
+    "\\GLA\\Handlers\\UI",
+    "\\GLA\\Models\\Person"
   ],
+  "SelectedNode": "\\GLA\\GLA.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GLA.Handlers.UI;
+using GLA.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +17,58 @@ using System.Windows.Shapes;
 
 namespace GLA
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    //The application will use a WPF interface when deployed
+
+    
     public partial class MainWindow : Window
     {
+        IMainUIHandler MainUIHandler;
         public MainWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
+        }
+        private void btnLoadListWithNewPlayers_Click(object sender,RoutedEventArgs e)
+        {
+            MainUIHandler = new MainUIHandler();
+            MainUIHandler.PlayerMgtHandler.AddNewPlayer("2020", "_", 1, 3);
+            MainUIHandler.PlayerMgtHandler.AddNewPlayer("2020", "_", 2, 3);
+            MainUIHandler.PlayerMgtHandler.AddNewPlayer("2020", "_", 3, 3);
+            foreach (IPlayer player in MainUIHandler.PlayerMgtHandler.NewPlayers)
+            {
+                /*
+                Console.WriteLine(player.ID.ToString());
+                Console.WriteLine(player.PersonalInfo.NameOfPerson.FullName());
+                Console.ReadLine();
+                */
+                /*
+                TextBox textBox = new TextBox();
+                textBox.Text = player.PersonalInfo.NameOfPerson.FullName();
+                MainStackPanel.Children.Add(textBox);
+                */
+                NewPlayers.Items.Add(player.PersonalInfo.NameOfPerson.FullName() + " - " + player.IDItem.ID);
+            }
+            
+        }
+
+
+    }
+    
+    /*
+    // For now going to use a console interface to get started
+    public class Program
+    {
+        public void Main()
+        {
+            IMainUIHandler UIHandlerMain = new MainUIHandler();
+            UIHandlerMain.PlayerMgtHandler.AddNewPlayer("2020", "_", 1, 3);
+            foreach(IPlayer player in UIHandlerMain.PlayerMgtHandler.NewPlayers)
+            {
+                Console.WriteLine(player.ID.ToString());
+                Console.WriteLine(player.PersonalInfo.NameOfPerson.FullName());
+                Console.ReadLine();
+            }
+                
         }
     }
+    */
 }

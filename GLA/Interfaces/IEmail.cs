@@ -9,16 +9,7 @@ namespace GLA.Interfaces
 {
     interface IEmail
     {
-       
-        bool IsPrimary
-        {
-            get;
-            set;
-        }
-        string Address
-        {
-            get;
-            set;
-        }
+        bool IsPrimary {get;set;}
+        string Address{get;set;}
     }
 }

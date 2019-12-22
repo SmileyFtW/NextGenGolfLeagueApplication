@@ -1,12 +1,14 @@
-﻿<Window x:Class="GLA_1_.MainWindow"
+﻿<Window x:Class="GLA.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GLA_1_"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel Name="MainDockPanel" Margin="10">
+        <WrapPanel DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+            <Button Name="btnLoadListWithNewPlayers" Click="btnLoadListWithNewPlayers_Click">Load New Player List</Button>
+        </WrapPanel>
+        <ListBox Name="NewPlayers"/>
+    </DockPanel>
 </Window>

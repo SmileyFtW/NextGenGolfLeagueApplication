@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    class IPlayer
+    interface IPlayer
     {
-        IIDItem ID { get; } 
+        IIDItem IDItem { get; } 
         IPersonalInfo PersonalInfo { get; }
     }
 }

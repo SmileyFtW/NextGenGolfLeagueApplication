@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    class IPersonalInfo
+    interface IPersonalInfo
     {
-        IIDItem id { get; }
-        INameOfPerson nameOfPerson { get; }
-        List<IEmail> emails { get; }
-        List<IPhone> phones { get; }
+        INameOfPerson NameOfPerson { get; }
+        List<IEmail> Emails { get; }
+        List<IPhone> Phones { get; }
     }
 }

@@ -9,17 +9,27 @@ namespace GLA.Models
 {
     class Player : IPlayer
     {
-        IIDItem _id;
-        IPersonalInfo _personalInfo;
+        //IIDItem id;
+        //IPersonalInfo personalInfo;
 
-        IIDItem ID { get; }
-        IPersonalInfo PersonalInfo {get;}
+        public IIDItem IDItem { get; protected set; }
+        public IPersonalInfo PersonalInfo { get; protected set; }
+
         //TODO add remaining properties
-
+        /*
+         * CourseStatus
+         * LeagueStatus
+         * Scores
+         * ScoreResults
+         * Handicaps
+         * Team
+         * Fees
+         * Authorities
+         */
         public Player(string idPrefix,string idSeparator, int idSeqNumber,int idNumDigits)
         {
-            IIDItem _id = new IDItem(idPrefix, idSeparator, idSeqNumber, idNumDigits);
-            IPersonalInfo _personalInfo = new PersonalInfo();
+            IDItem = new IDItem(idPrefix, idSeparator, idSeqNumber, idNumDigits);
+            PersonalInfo = new PersonalInfo();
         }
     }
 

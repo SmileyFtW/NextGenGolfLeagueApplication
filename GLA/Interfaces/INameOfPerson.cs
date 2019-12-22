@@ -8,25 +8,10 @@ namespace GLA.Interfaces
 {
     interface INameOfPerson
     {
-        string First
-        {
-            get;
-            set;
-        }
-        string Middle
-        {
-            get;
-            set;
-        }
-        string Last
-        {
-            get;
-            set;
-        }
-        string Suffix
-        {
-            get;set;
-        }
+        string First{get; set;}
+        string Middle{get; set;}
+        string Last{get; set;}
+        string Suffix{get; set;}
         string FullName();
     }
 }

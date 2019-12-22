@@ -9,9 +9,6 @@ namespace GLA.Models
 {
     class Email : IEmail
     {
-        string _address;
-        bool _isPrimary;
-
         public string Address{get;set;}
         public bool IsPrimary { get; set; }
     }
