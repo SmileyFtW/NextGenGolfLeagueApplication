@@ -8,27 +8,10 @@ namespace GLA.Interfaces
 {
     interface IPhone
     {
-     
-        bool IsMobile
-        {
-            get;set;
-        }
-        string Code
-        {
-            get;set;
-        }
-        string Prefix
-        {
-            get;set;
-        }
-        string Number
-        {
-            get;set;
-        }
- 
-        bool IsPrimary
-        {
-            get;set;
-        }
+        bool IsMobile{get;set;}
+        string Code{get;set;}
+        string Prefix{get;set;}
+        string Number{get;set;}
+        bool IsPrimary{get;set;}
     }
 }
