@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace GLA.Testing.PlayerManagement
 {
+    /*
+     *Probably need to restructure the tests to exercise the IDItem directly
+     * rather than through the player object.
+     */
     [TestFixture]
     class PlayerMgtTests
     {
