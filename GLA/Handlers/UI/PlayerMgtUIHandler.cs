@@ -19,7 +19,13 @@ namespace GLA.UI.Handlers
             IPlayer player=new Player(idPrefix,idSeparator,idSeqNumber,idNumDigits);
             NewPlayers.Add(player);
         }
-         
+
+        public void AddNewPlayer()
+        {
+            IPlayer player = new Player();
+            NewPlayers.Add(player);
+        }
+
         public PlayerMgtUIHandler()
         {
             NewPlayers = new List<IPlayer>();

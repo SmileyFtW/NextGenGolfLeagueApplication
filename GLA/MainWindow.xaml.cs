@@ -22,24 +22,28 @@ namespace GLA
     
     public partial class MainWindow : Window
     {
-        IMainUIHandler MainUIHandler;
+        IMainUIHandler MainUIHandler =new MainUIHandler();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void btnLoadListWithNewPlayers_Click(object sender,RoutedEventArgs e)
+        private void AddNewPlayer_Click(object sender,RoutedEventArgs e)
         {
-            MainUIHandler = new MainUIHandler();
-            for(int i=1;i<=8;i++)
-            {
-                MainUIHandler.PlayerMgtHandler.AddNewPlayer("2020", "_", i, 3);
-            }
+            MainUIHandler.PlayerMgtHandler.AddNewPlayer();
             
+            /*
             foreach (IPlayer player in MainUIHandler.PlayerMgtHandler.NewPlayers)
             {
                 NewPlayers.Items.Add(player.PersonalInfo.NameOfPerson.FullName() + " - " + player.IDItem.ID);
             }
-            
+            */
+        }
+        private void UpdatePlayerInfo_Click(object sender, RoutedEventArgs e)
+        {
+        }
+        private void UpdatePlayerListBox()
+        {
         }
     }
 }

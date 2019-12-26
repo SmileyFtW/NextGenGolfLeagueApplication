@@ -31,6 +31,12 @@ namespace GLA.Models
             IDItem = new IDItem(idPrefix, idSeparator, idSeqNumber, idNumDigits);
             PersonalInfo = new PersonalInfo();
         }
+
+        public Player()
+        {
+            IDItem = new IDItem();
+            PersonalInfo = new PersonalInfo();
+        }
     }
 
 }

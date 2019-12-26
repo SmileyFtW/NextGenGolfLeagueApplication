@@ -18,17 +18,32 @@ namespace GLA.Models
         {
             get
             {
-                return _prefix + _separator + _seqnumber.ToString().PadLeft(_seqnumberNumDigits, '0');
+                if (HasID == true)
+                {
+                    return _prefix + _separator + _seqnumber.ToString().PadLeft(_seqnumberNumDigits, '0');
+                }
+                else
+                {
+                    return "";
+                }
             }
         }
- 
 
+        public bool HasID { get; }
+
+        //Constructors
+        public IDItem()
+        {
+            HasID = false;
+        }
         public IDItem (string Prefix, string Separator, int SeqNumber, int NumberOfDigits)
         {
             _prefix = Prefix;
             _separator = Separator;
             _seqnumber = SeqNumber;
             _seqnumberNumDigits = NumberOfDigits;
+            HasID = true;
         }
+        
     }
 }

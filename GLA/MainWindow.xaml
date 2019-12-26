@@ -7,7 +7,8 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel Name="MainDockPanel" Margin="10">
         <WrapPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="10">
-            <Button Name="btnLoadListWithNewPlayers" Click="btnLoadListWithNewPlayers_Click"> Load New Player List </Button>
+            <Button Name="btnAddNewPlayer" Click="UpdatePlayerInfo_Click" Margin="5">Add A New Player</Button>
+            <Button Name="btnUpdatePlayerInfo" Click="UpdatePlayerInfo_Click" Margin="5">Update Player Info</Button>
         </WrapPanel>
         <ListBox Name="NewPlayers"/>
     </DockPanel>
