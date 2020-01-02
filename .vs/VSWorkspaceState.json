@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GLA"
+    "\\GLA",
+    "\\GLA\\Testing",
+    "\\GLA\\Testing\\PlayerManagement",
+    "\\GLA\\Testing\\SharedModels"
   ],
-  "SelectedNode": "\\GLA\\MainWindow.xaml.cs",
+  "SelectedNode": "\\GLA\\Testing\\SharedModels\\IDItemTests.cs",
   "PreviewInSolutionExplorer": false
 }
