@@ -80,25 +80,13 @@ namespace GLA.Models
         //Constructors
         public IDItem()
         {
-            HasID = false;
-            IsValidID=false;
         }
         public IDItem (string Prefix, string Separator, int SeqNumber, int NumberOfDigits)
         {
-            if (SeqNumberCompatibleWithNumberOfDigits(SeqNumber, NumberOfDigits))
-            {
-                IsValidID = true;
-                HasID = true;
-                _prefix = Prefix;
-                _separator = Separator;
-                _seqnumber = SeqNumber;
-                _seqnumberNumDigits = NumberOfDigits;
-            }
-            else
-            {
-                IsValidID = false;
-                HasID = false;
-            }
+            _prefix = Prefix;
+            _separator = Separator;
+            _seqnumber = SeqNumber;
+            _seqnumberNumDigits = NumberOfDigits;
         }
     }
 }
