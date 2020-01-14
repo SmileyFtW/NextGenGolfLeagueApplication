@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Models
 {
-    class NameOfPerson : INameOfPerson
+    public class NameOfPerson : INameOfPerson
     {
         public string First { get; set; }
         public string Middle { get; set; }

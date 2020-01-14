@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    interface IPhone
+    public interface IPhone
     {
         bool IsMobile{get;set;}
         string Code{get;set;}

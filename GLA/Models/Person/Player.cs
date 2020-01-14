@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Models
 {
-    class Player : IPlayer
+    public class Player : IPlayer
     {
         //IIDItem id;
         //IPersonalInfo personalInfo;

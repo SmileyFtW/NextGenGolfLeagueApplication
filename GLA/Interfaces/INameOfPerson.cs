@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    interface INameOfPerson
+    public interface INameOfPerson
     {
         string First{get; set;}
         string Middle{get; set;}

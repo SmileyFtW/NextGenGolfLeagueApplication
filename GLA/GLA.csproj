@@ -81,7 +81,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataIO\PlayersCollectionSerialization.cs" />
+    <Compile Include="DataIO\PlayersSerialization.cs" />
     <Compile Include="Testing\PlayerManagement\PlayerMgtTests.cs" />
     <Compile Include="Testing\Serialization\PlayerCollectionSerializationTests.cs" />
     <Compile Include="Testing\SharedModels\IDItemTests.cs" />

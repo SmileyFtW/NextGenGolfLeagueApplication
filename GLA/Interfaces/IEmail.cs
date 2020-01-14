@@ -7,7 +7,7 @@ using GLA.Models;
 
 namespace GLA.Interfaces
 {
-    interface IEmail
+    public interface IEmail
     {
         bool IsPrimary {get;set;}
         string Address{get;set;}

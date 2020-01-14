@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Models
 {
-    class PersonalInfo : IPersonalInfo
+    public class PersonalInfo : IPersonalInfo
     {
         public INameOfPerson NameOfPerson{ get; protected set; }
         

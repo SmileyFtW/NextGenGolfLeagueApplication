@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    interface IPersonalInfo
+    public interface IPersonalInfo
     {
         INameOfPerson NameOfPerson { get; }
         List<IEmail> Emails { get; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Interfaces
 {
-    interface IIDItem
+    public interface IIDItem
     {
         string ID { get; }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GLA.Models
 {
-    class IDItem : IIDItem
+    public class IDItem : IIDItem
     {
         string _prefix;
         string _separator;
